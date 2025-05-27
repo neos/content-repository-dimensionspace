@@ -52,7 +52,7 @@ final class ContentDimensionValue
      */
     public function __construct(
         string $value,
-        ContentDimensionValueSpecializationDepth $specializationDepth = null,
+        ?ContentDimensionValueSpecializationDepth $specializationDepth = null,
         array $constraints = [],
         array $configuration = []
     ) {

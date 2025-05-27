@@ -314,7 +314,7 @@ class InterDimensionalVariationGraph
     public function getSpecializationSet(
         DimensionSpacePoint $origin,
         bool $includeOrigin = true,
-        DimensionSpacePointSet $excludedSet = null
+        ?DimensionSpacePointSet $excludedSet = null
     ): DimensionSpacePointSet {
         if (!$this->contentDimensionZookeeper->getAllowedDimensionSubspace()->contains($origin)) {
             throw new Exception\DimensionSpacePointNotFound(sprintf('%s was not found in the allowed dimension subspace', $origin), 1505929456);
